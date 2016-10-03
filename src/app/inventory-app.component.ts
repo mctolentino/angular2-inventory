@@ -5,13 +5,10 @@ import {Product} from "./product/product.model";
   selector: 'inventory-app',
   template: `
   <div class="inventory-app">
-    <div *ngFor="let product of products">
-      {{ product.sku }} :
-      {{ product.price }} :
-      {{ product.name }} :
-      {{ product.imageUrl }} :
-      {{ product.department }}
-    </div>
+    <products-list 
+      [productList]="products"
+      (onProductSelected)="productWasSelected($event)">
+    </products-list>
   </div>
   `
 })
@@ -31,7 +28,7 @@ export class InventoryApp {
       new Product(
         'NEATJACKET',
         'Blue Jacket',
-        '/resources/images/products/black-jacket.jpg',
+        '/resources/images/products/blue-jacket.jpg',
         ['Women', 'Apparel', 'Jacket and Vests'],
         238.99
       ),
@@ -42,7 +39,10 @@ export class InventoryApp {
         ['Men', 'Shoes', 'Running Shoes'],
         109.99
       )];
-
-
   }
+
+  productWasSelected(product: Product): void {
+    console.log('Product clicked: ', product);
+  }
+
 }
