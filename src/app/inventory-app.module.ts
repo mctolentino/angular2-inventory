@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { InventoryApp } from './inventory-app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    InventoryApp
   ],
   imports: [
     BrowserModule,
@@ -15,6 +15,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [InventoryApp]
 })
-export class AppModule { }
+export class InventoryAppModule { }
