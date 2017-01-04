@@ -1,14 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
-import { InventoryApp } from './inventory-app.component';
-import { ProductsListComponent } from './products-list/products-list.component';
-import { ProductRowComponent } from './product-row/product-row.component';
-import { ProductImageComponent } from './product-image/product-image.component';
-import { ProductDepartmentComponent } from './product-department/product-department.component';
-import { ProductDisplayComponent } from './product-display/product-display.component';
+import {InventoryApp} from './inventory-app.component';
+import {ProductsListComponent} from './products-list/products-list.component';
+import {ProductRowComponent} from './product-row/product-row.component';
+import {ProductImageComponent} from './product-image/product-image.component';
+import {ProductDepartmentComponent} from './product-department/product-department.component';
+import {ProductDisplayComponent} from './product-display/product-display.component';
+import {DemoFormSku} from "./forms/demo-form-sku";
 
 @NgModule({
   declarations: [
@@ -17,14 +18,17 @@ import { ProductDisplayComponent } from './product-display/product-display.compo
     ProductRowComponent,
     ProductImageComponent,
     ProductDepartmentComponent,
-    ProductDisplayComponent
+    ProductDisplayComponent,
+    DemoFormSku
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [],
   bootstrap: [InventoryApp]
 })
-export class InventoryAppModule { }
+export class InventoryAppModule {
+}

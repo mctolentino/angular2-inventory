@@ -9,6 +9,8 @@ import {Product} from "./product/product.model";
       [productList]="products"
       (onProductSelected)="productWasSelected($event)">
     </products-list>
+    <hr />
+    <demo-form-sku></demo-form-sku>
   </div>
   `
 })
@@ -19,25 +21,25 @@ export class InventoryApp {
   constructor() {
     this.products = [
       new Product(
-        'NICEHAT',
-        'A Nice Black Hat',
-        '/resources/images/products/black-hat.jpg',
-        ['Men', 'Accessories', 'Hats'],
-        29.99
+        'AMBROXOL HCL',
+        'Ambroxol',
+        '/resources/images/products/ambroxol.jpg',
+        ['Mucolytic'],
+        21.00
       ),
       new Product(
-        'NEATJACKET',
-        'Blue Jacket',
-        '/resources/images/products/blue-jacket.jpg',
-        ['Women', 'Apparel', 'Jacket and Vests'],
-        238.99
+        'MEFENAMIC',
+        'Mefenamic Acid',
+        '/resources/images/products/mefenamic.jpg',
+        ['Non-steroidal', 'Anti-inflammatory'],
+        45.00
       ),
       new Product(
-        'MYSHOES',
-        'Black Running Shoes',
-        '/resources/images/products/black-shoes.jpg',
-        ['Men', 'Shoes', 'Running Shoes'],
-        109.99
+        'CEFALEXIN',
+        'Zelexin',
+        '/resources/images/products/zelexin.jpg',
+        ['Antibacterial'],
+        114.00
       )];
   }
 
