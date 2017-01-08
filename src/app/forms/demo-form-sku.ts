@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'demo-form-sku',
-  template: `asdfs
+  template: `
     <div class="ui raised segment">
       <h2 class="ui header">Demo Form: Sku</h2>
       <form #f="ngForm"

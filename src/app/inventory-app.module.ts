@@ -10,6 +10,9 @@ import {ProductImageComponent} from './product-image/product-image.component';
 import {ProductDepartmentComponent} from './product-department/product-department.component';
 import {ProductDisplayComponent} from './product-display/product-display.component';
 import {DemoFormSku} from "./forms/demo-form-sku";
+import {DemoFormSkuBuilder} from "./forms/demo-form-sku-with-builder";
+import {DemoFormWithExplicitValidations} from "./forms/demo-form-with-explicit-validations";
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import {DemoFormSku} from "./forms/demo-form-sku";
     ProductImageComponent,
     ProductDepartmentComponent,
     ProductDisplayComponent,
-    DemoFormSku
+    DemoFormSku,
+    DemoFormSkuBuilder,
+    DemoFormWithExplicitValidations
   ],
   imports: [
     BrowserModule,

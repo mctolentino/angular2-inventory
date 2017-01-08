@@ -10,7 +10,7 @@ import {Product} from "./product/product.model";
       (onProductSelected)="productWasSelected($event)">
     </products-list>
     <hr />
-    <demo-form-sku></demo-form-sku>
+    <demo-form-with-explicit-validations></demo-form-with-explicit-validations>
   </div>
   `
 })
